@@ -269,6 +269,7 @@ curl http://k8s-control.cka:30634
 ```
 To verify in which worker the pod is running, we execute:
 ```bash
+joaquin@k8s-control:~$ kubectl get pods -o wide
 NAME                     READY   STATUS    RESTARTS   AGE   IP             NODE              NOMINATED NODE   READINESS GATES
 nginx-77b4fdf86c-t8l28   1/1     Running   0          95s   10.244.124.1   k8s-worker1.cka   <none>           <none>
 ```
