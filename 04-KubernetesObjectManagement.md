@@ -4,7 +4,7 @@
 
 ### kubectl get
 
-Use `kubectl get` to los objects in the kubetnetes cluster.  
+Use `kubectl get` to los objects in the kubernetes cluster.  
 Output formats: wide, json, yaml
 ```bash
 kubectl get <object-type> <object-name> -n <namespace> -o <output-format> --sort-by <json-path-expression> --selector <selector-filter-by-label>
@@ -42,7 +42,7 @@ kubectl delete <object-type> <object-name>
 
 ### kubectl exec
 
-`kubectl exec` can be used to run commands inside containers. Keep in mind that, in order for a command to succeed, the necessary software must exist within the containter to run it.  
+`kubectl exec` can be used to run commands inside containers. Keep in mind that, in order for a command to succeed, the necessary software must exist within the container to run it.  
 If the pod has only one container, it's unnecessary specify the container name with `-c`.
 ```bash
 kubectl exec <pod-name> -c <container-name> -- <command>
@@ -104,7 +104,7 @@ kubectl apply -f rolebinding.yml
 
 ### Create service account
 
-In K8s, a `service account` is an account used by container processes within Pods to authetincate with the K8s API.
+In K8s, a `service account` is an account used by container processes within Pods to authenticate with the K8s API.
 
 ```yaml
 apiVersion: v1

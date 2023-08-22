@@ -93,7 +93,7 @@ From the control plane node, uncordon worker node 1:
 kubectl uncordon k8s-worker1.cka
 ```
 
-Chech the cluster status:
+Check the cluster status:
 ```bash
 joaquin@k8s-control:~$ kubectl get nodes
 NAME              STATUS   ROLES           AGE   VERSION

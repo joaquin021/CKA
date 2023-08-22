@@ -22,7 +22,7 @@ sudo chown -R joaquin:joaquin $HOME/etcd-certs/*
 ```
 
 
-List keys for check conectivity: 
+List keys for check connectivity: 
 
 ```bash
 ETCDCTL_API=3 etcdctl get "" --prefix --keys-only --endpoints=https://k8s-control.cka:2379 --cacert=$HOME/etcd-certs/ca.crt --cert=$HOME/etcd-certs/server.crt --key=$HOME/etcd-certs/server.key
